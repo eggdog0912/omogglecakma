@@ -73,30 +73,5 @@ body {
 
 }
 
-#camera-close{
-    background-color:rgb(100, 27, 27);
-    color:blanchedalmond;
-    border-radius:10px;
-    padding:15px 30px;
-    font-size:18px;
-    border:none;
-    cursor:pointer;
-    transition: background-color 0.3s ease;
-}
-#camera-close:hover{
-    background-color:rgb(124, 39, 39);
-}
-#camera-close:active{
-    background-color:rgb(160, 11, 11);
-}
-#github-button{
-    background-color:rgb(0, 0, 0);
-    color:rgba(146, 140, 130, 0.89);
-    border-radius:10px;
-    padding:10px 20px;
-    font-size:18px;
-    border:none;
-    cursor:pointer;
-    transition: background-color 0.3s ease;
-}
+
     
