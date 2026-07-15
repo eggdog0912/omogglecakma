@@ -8,6 +8,7 @@ const ctx = canvas.getContext("2d");
 
 const button = document.getElementById("kamera-ac");
 const video = document.getElementById("camera");
+const closeButton = document.getElementById("camera-close");
 
 let faceLandmarker;
 
@@ -21,9 +22,19 @@ button.addEventListener("click", async function () {
     video.srcObject = stream;
     await video.play(); 
 
+    
+
 predictWebcam();
 
 });
+
+closeButton.addEventListener("click", function () {
+    const stream = video.srcObject;
+    const tracks = stream.getTracks();
+    tracks.forEach(track => track.stop());
+    video.srcObject = null;
+});
+
 async function createFaceLandmarker() {
 
     console.log("1");
